@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Найди пару - Сюрприз для мамы</title>
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Стили -->
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+
+<body>
+    <!-- Блок частиц на весь экран (от основного дизайна) -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Кнопка назад -->
+    <a href="index.html" class="floating-game-btn back-btn">
+        <span class="fb-icon">⬅️</span>
+        <span class="fb-text">К поздравлению</span>
+    </a>
+
+    <section class="game-section">
+        <h1 class="hero-title" style="margin-bottom: 20px;">Найди <span class="highlight">пару</span></h1>
+        <p class="greeting-text" style="text-align: center; margin-bottom: 40px; max-width: 600px;">
+            Открой все карточки попарно, чтобы получить еще одно теплое пожелание!
+        </p>
+
+        <!-- Сетка игры -->
+        <div class="memory-grid" id="memory-grid">
+            <!-- Карточки генерируются в game.js -->
+        </div>
+    </section>
+
+    <!-- Модальное окно победы -->
+    <div class="win-modal" id="win-modal">
+        <div class="win-content greeting-box">
+            <h2 class="greeting-title">Ура! 🎉</h2>
+            <p class="greeting-text">
+                Ты нашла все карточки!<br><br>
+                Пусть в твоей жизни будет столько же беззаботных и радостных моментов! 
+                Я бесконечно люблю тебя и желаю самого огромного женского счастья.
+            </p>
+            <div class="signature">С любовью ❤️</div>
+            <button class="hug-btn" id="restart-btn" style="margin-top: 30px;">
+                <span class="btn-text">Сыграть еще раз</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="game.js?v=2"></script>
+</body>
+
+</html>
