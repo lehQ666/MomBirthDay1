@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днём Рождения, мама!</title>
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Плавающая кнопка мини-игры -->
+    <a href="game.html" class="floating-game-btn">
+        <span class="fb-icon">🎁</span>
+        <span class="fb-text">Сюрприз</span>
+    </a>
+
+    <!-- Блок частиц на весь экран -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Первый экран (Обложка) -->
+    <section class="hero" id="hero">
+        <canvas id="spiderweb-canvas"></canvas>
+        <div class="hero-content">
+            <p class="hero-subtitle fade-up">Спасибо за твою любовь, заботу и тепло</p>
+            <h1 class="hero-title fade-up delay-1">С Днём Рождения,<br><span class="highlight">мама!</span></h1>
+
+        </div>
+    </section>
+
+    <!-- Блок с фотографиями -->
+    <section class="gallery-section reveal">
+        <div class="gallery-grid fade-up delay-1">
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="img/IMG_1044.JPG" alt="Воспоминание">
+                </div>
+            </div>
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="img/photo_2026-04-17_18-34-37.jpg" alt="Воспоминание">
+                </div>
+            </div>
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="img/photo_2026-04-17_18-34-38.jpg" alt="Воспоминание">
+                </div>
+            </div>
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="img/photo_2026-04-19_14-42-48.jpg" alt="Воспоминание">
+                </div>
+            </div>
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="img/photo_2026-04-19_14-42-57.jpg" alt="Воспоминание">
+                </div>
+            </div>
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="img/photo_2026-04-19_14-43-01.jpg" alt="Воспоминание">
+                </div>
+            </div>
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="img/photo_2026-04-19_14-43-04.jpg" alt="Воспоминание">
+                </div>
+            </div>
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="img/photo_2026-04-19_14-43-06.jpg" alt="Воспоминание">
+                </div>
+            </div>
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="img/photo_2026-04-19_14-43-09.jpg" alt="Воспоминание">
+                </div>
+            </div>
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="img/photo_2026-04-19_14-43-11.jpg" alt="Воспоминание">
+                </div>
+            </div>
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="img/photo_2026-04-19_14-43-13.jpg" alt="Воспоминание">
+                </div>
+            </div>
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="img/photo_2026-04-19_14-43-37.jpg" alt="Воспоминание">
+                </div>
+            </div>
+            <div class="photo-card">
+                <div class="photo-frame">
+                    <img src="img/photo_2026-04-19_14-43-59.jpg" alt="Воспоминание">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Поздравительный текст -->
+    <section class="greeting-section reveal">
+        <div class="greeting-box">
+            <div class="decorative-element top-left">✨</div>
+            <h2 class="greeting-title">Моя мама,</h2>
+            <p class="greeting-text">
+                В этот прекрасный день я хочу сказать тебе самое главное: ты — свет моей жизни.
+                Твоя поддержка делает меня сильнее.
+                Пусть каждый твой день будет наполнен радостью, пускай здоровье будет крепким,
+                а в душе всегда тепло.
+                <br><br>
+                Оставайся такой же невероятно красивой, доброй и искренней.
+            </p>
+            <div class="signature">С любовью и нежностью</div>
+            <div class="decorative-element bottom-right">🌸</div>
+        </div>
+    </section>
+
+    <!-- Финальный блок -->
+    <section class="final-section reveal">
+        <div class="final-content">
+            <h2 class="final-message">Я тебя очень люблю ❤️</h2>
+            <button class="hug-btn" id="hug-btn">
+                <span class="btn-text">Обнять маму</span>
+                <span class="btn-icon">🤗</span>
+            </button>
+        </div>
+        <!-- Контейнер для анимации сердечек после клика -->
+        <div id="hearts-container"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
